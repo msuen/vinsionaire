@@ -1,0 +1,19 @@
+%hero {
+	background-color: #000;
+	height: 450px;
+	height: 100vh;
+	min-height: 450px;
+	max-height: 750px;
+	@include bp(lg) {
+		height: 80vh;
+	}
+}
+
+.hero {
+	@extend %hero;
+}
+
+.hero__title {
+	color: $color--accent;
+	@include vertical-align(relative);
+}

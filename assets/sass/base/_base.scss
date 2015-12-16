@@ -1,0 +1,207 @@
+/*----------------------------------------
+  #BASE STYLES
+----------------------------------------*/
+
+*,
+*:before,
+*:after {
+	@include box-sizing(border-box);
+	margin:0;
+	padding: 0;
+}
+
+html, 
+body {
+	height: 100%;
+	width: 100%;
+	font-size: $text__size--base;
+	line-height: $text__line-height--base;
+}
+
+body {
+	overflow-x: hidden;
+}
+
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6 {
+	font-family: $text__family--serif;
+	font-weight: $text__weight--bold;
+	line-height: $text__line-height--heading;
+}
+
+h1 {
+	font-size: 40px;
+	font-size: 4rem;
+}
+
+h2 {
+	font-size: 32px;
+	font-size: 3.2rem;
+}
+
+h3 {
+	font-size: 24px;
+	font-size: 2.4rem;
+}
+
+h4 {
+	font-size: 20px;
+	font-size: 2rem;
+}
+
+h5 {
+	font-size: 18px;
+	font-size: 1.8rem;
+}
+
+h6 {
+	font-size: 16px;
+	font-size: 1.6rem;
+}
+
+p {
+	color: $text__color--base;
+	font-size: 16px;
+	font-size: 1.6rem;
+}
+
+a {
+	color: $text__color--accent;
+	&:hover {
+		color: $text__color--accent-light;
+	}
+}
+
+ul {
+  list-style: circle inside; }
+ol {
+  list-style: decimal inside; }
+ol, ul {
+  padding-left: 0;
+  margin-top: 0; }
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+  margin: 1.5rem 0 1.5rem 3rem;
+  font-size: 90%; }
+li {
+  margin-bottom: 1rem; }
+
+hr {
+	margin-top: 3rem;
+	margin-bottom: 3.5rem;
+	border-width: 0;
+	border-top: $border--base;
+}
+
+.wrapper {
+	z-index: $z-index--base;
+	min-width: 100%;
+    min-height: 100%;
+    position: relative;
+    top: 0;
+    bottom: 100%;
+    left: 0;
+    background-color: rgba(255,255,255,1);
+	@include filter-gradient(#ffffff, #e6e6e6, vertical);
+	@include background-image(linear-gradient(top, rgba(255,255,255,1) 0%, rgba(230,230,230,1) 100%));
+}
+
+%button {
+	@include box-sizing(border-box);
+	display: inline-block;
+	border: $border--base;
+	height: 48px;
+	line-height: 48px;
+	border-radius: $border__radius--base;
+	color: $text__color--base;
+	text-align: center;
+	text-transform: uppercase;
+	text-decoration: none;
+	white-space: nowrap;
+	background-color: transparent;
+	cursor: pointer;
+	padding: 1.5em 3em;
+	&:hover, &:focus {
+		color: $text__color--base-dark;
+		border-color: $border__color--base-dark;
+		outline: 0;
+	}
+}
+
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+	@extend %button;
+}
+
+%input {
+	height: 48px;
+	background-color: $color--white;
+	border: $border__base;
+	border-radius: $border__radius--base;
+	@include box-shadow(none);
+	@include box-sizing(border-box);
+	color: $text__color--base;
+	padding: 1.5em 3em;
+}
+
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+textarea,
+select {
+	@extend %input;
+	&:focus, &:hover {
+		border-color: $border__color--base-dark;
+		outline: 0;
+	}
+}
+
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+textarea {
+	-webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none; 
+}
+
+// Spacing
+
+button {
+	margin-bottom: 1rem; 
+}
+
+input,
+textarea,
+select,
+fieldset {
+	margin-bottom: 1.5rem; 
+}
+
+pre,
+blockquote,
+dl,
+figure,
+table,
+p,
+ul,
+ol,
+form {
+	margin-bottom: 2.5rem;
+}
