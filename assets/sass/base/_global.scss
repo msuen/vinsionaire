@@ -11,6 +11,7 @@ $color--primary-dark: darken($color--primary, 15%);
 
 $color--accent-light: #F8D3B7;
 $color--accent: #9C8675;
+$color--accent-dark: darken(#9C8675,15%);
 
 $color--soft: #D4D3D3;
 $color--soft-light: #E0E0E0;
@@ -48,10 +49,17 @@ $spacing--base: $text__line-height--base * 1em;
 $spacing--small: $spacing--base / 2;
 
 // Border
+$border__color--base-light: $color--soft-light;
 $border__color--base: $color--soft;
 $border__color--base-dark: $color--soft-dark;
+$border__color--accent: $color--accent;
+$border__color--accent-light: $color--accent-light;
 $border--base: 1px solid $border__color--base;
+$border--base-light: 1px solid $border__color--base-light;
+$border--accent: 1px solid $border__color--accent;
+$border--accent-light: 1px solid $border__color--accent-light;
 
 // Background Colors
 $background__color--base: $color--white;
+$background__color--secondary: $color--black;
 

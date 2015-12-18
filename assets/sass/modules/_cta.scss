@@ -1,0 +1,37 @@
+.cta {
+	background-color: $background__color--secondary;
+}
+
+.cta__heading {
+	@include font-size(40px);
+	color: $text__color--accent-light;
+	text-align: center;
+	@include bp(md) {
+		display: inline-block;
+		float: left;
+	}
+}
+
+.cta__caption {
+	@include font-size(16px);
+	@include font($text__family--sans,300);
+	color: $text__color--soft-light;
+	display: block;
+	margin-bottom: 1.5em;
+}
+
+.cta__hr {
+    &-1 {
+    	@include bp(md) {
+		    float: right;
+		    width: -moz-calc(100% - 400px);
+		    width: -webkit-calc(100% - 400px);
+		    width: calc(100% - 400px);
+    	}
+    }
+    &-1, &-2 {
+		@include opacity(0.4);
+		border-top: 1px $text__color--accent-light solid;
+    }
+}
+

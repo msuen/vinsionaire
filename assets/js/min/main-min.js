@@ -1,0 +1,1 @@
+$("#nav__trigger").change(function(){var a=this.checked?"hidden":"auto";$("body").css("overflow",a)}),$(".nav + div").hasClass("content-nohero")?$(".nav").addClass("nav--black"):$(".nav").removeClass("nav--black"),$(window).scroll(function(){var a=$(window).scrollTop();a>=100?$(".nav").addClass("scrolled"):$(".nav").removeClass("scrolled")});

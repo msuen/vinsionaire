@@ -2,24 +2,26 @@
   #BASE STYLES
 ----------------------------------------*/
 
-*,
-*:before,
-*:after {
+html {
 	@include box-sizing(border-box);
-	margin:0;
-	padding: 0;
 }
+
+// * {
+// 	border: 1px solid red !important;
+// }
+
+*, *:before, *:after {
+  @include box-sizing(inherit);
+}
+
+::-webkit-scrollbar { width: 0 !important }
 
 html, 
 body {
-	height: 100%;
 	width: 100%;
+	font-family: $text__family--sans;
 	font-size: $text__size--base;
 	line-height: $text__line-height--base;
-}
-
-body {
-	overflow-x: hidden;
 }
 
 h1, 
@@ -29,8 +31,9 @@ h4,
 h5, 
 h6 {
 	font-family: $text__family--serif;
-	font-weight: $text__weight--bold;
+	font-weight: $text__weight;
 	line-height: $text__line-height--heading;
+	margin-bottom: 2.5rem;
 }
 
 h1 {
@@ -97,88 +100,6 @@ hr {
 	margin-bottom: 3.5rem;
 	border-width: 0;
 	border-top: $border--base;
-}
-
-.wrapper {
-	z-index: $z-index--base;
-	min-width: 100%;
-    min-height: 100%;
-    position: relative;
-    top: 0;
-    bottom: 100%;
-    left: 0;
-    background-color: rgba(255,255,255,1);
-	@include filter-gradient(#ffffff, #e6e6e6, vertical);
-	@include background-image(linear-gradient(top, rgba(255,255,255,1) 0%, rgba(230,230,230,1) 100%));
-}
-
-%button {
-	@include box-sizing(border-box);
-	display: inline-block;
-	border: $border--base;
-	height: 48px;
-	line-height: 48px;
-	border-radius: $border__radius--base;
-	color: $text__color--base;
-	text-align: center;
-	text-transform: uppercase;
-	text-decoration: none;
-	white-space: nowrap;
-	background-color: transparent;
-	cursor: pointer;
-	padding: 1.5em 3em;
-	&:hover, &:focus {
-		color: $text__color--base-dark;
-		border-color: $border__color--base-dark;
-		outline: 0;
-	}
-}
-
-button,
-input[type="submit"],
-input[type="reset"],
-input[type="button"] {
-	@extend %button;
-}
-
-%input {
-	height: 48px;
-	background-color: $color--white;
-	border: $border__base;
-	border-radius: $border__radius--base;
-	@include box-shadow(none);
-	@include box-sizing(border-box);
-	color: $text__color--base;
-	padding: 1.5em 3em;
-}
-
-input[type="email"],
-input[type="number"],
-input[type="search"],
-input[type="text"],
-input[type="tel"],
-input[type="url"],
-input[type="password"],
-textarea,
-select {
-	@extend %input;
-	&:focus, &:hover {
-		border-color: $border__color--base-dark;
-		outline: 0;
-	}
-}
-
-input[type="email"],
-input[type="number"],
-input[type="search"],
-input[type="text"],
-input[type="tel"],
-input[type="url"],
-input[type="password"],
-textarea {
-	-webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none; 
 }
 
 // Spacing

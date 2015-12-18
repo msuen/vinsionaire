@@ -1,0 +1,99 @@
+.list__heading-wrapper {
+	padding: 0 2.5em;
+	@include bp(lg) {
+		padding: 0;
+	}
+}
+
+.list__heading {
+	font-weight: 400;
+	font-style: italic;
+	margin-bottom: 0.25em;
+}
+
+.list__hr {
+	margin: 0 0 2.5em 0;
+}
+
+.list {
+	margin: 2.5em 0 0 0;
+	padding: 0;
+	@include bp(lg) {
+		padding: 2.5em 0;
+	}
+	.wrapper {
+		@include bp(lg) {
+			@include grid__container(960px);
+		}
+		@include bp(xl) {
+			@include grid__container(1170px);
+		}
+	}
+}
+
+.list__item {
+	@include container;
+	@include gallery(2);
+	position: relative;
+	margin-bottom: 2.5em;
+	padding: 2em;
+	background-color: $color--white;
+	color: $text__color--base;
+	text-decoration: none;
+	text-align: center;
+	@include bp(md) {
+		text-align: left;
+	}
+	&:hover {
+		color: $text__color--base;
+	}
+}
+
+.list__image {
+	margin-bottom: 1em;
+	@include bp(md) {
+		margin-bottom: 0;
+		@include span(2 of 12);
+	}
+}
+
+.list__description {
+	@include bp(md) {
+		@include span(10 of 12 last);
+		padding-left: gutter();
+	}
+}
+
+.list__item-heading {
+	color: $color--black;
+	@include font-size(20px);
+	margin-bottom: 0.5em;
+	@include bp(md) {
+		@include font-size(28px);
+	}
+}
+
+
+.list__price {
+	color: $color--primary-light;
+}
+
+.list__region,
+.list__size {
+	color: $color--soft-dark;
+	display: block;
+}
+
+.list__region,
+.list__size {
+	@include uppercase(0.5px);
+	@include font-size(10px);
+}
+
+.list__price {
+	@include font-size(18px);
+	@include font($text__family--serif,400);
+	span {
+		@include font-size(12px);
+	}
+}

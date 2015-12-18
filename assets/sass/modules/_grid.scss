@@ -1,4 +1,5 @@
 %hero {
+	padding: 2.5em;
 	background-color: #000;
 	height: 450px;
 	height: 100vh;
@@ -9,6 +10,10 @@
 	}
 }
 
+@mixin grid__container($containerWidth) {
+	@include container($containerWidth);
+}
+
 .hero {
 	@extend %hero;
 }
@@ -16,4 +21,93 @@
 .hero__title {
 	color: $color--accent;
 	@include vertical-align(relative);
+}
+
+%container {
+	@include container();
+	padding: 2.5em;
+	@include bp(lg) {
+		padding: 2.5em 0;
+		margin: 1.25em 0;
+		@include grid__container(960px);
+	}
+	@include bp(xl) {
+		@include grid__container(1170px);
+	}
+}
+
+.container {
+	@extend %container;
+}
+
+.content {
+	&-nohero {
+		padding-top: 6em;
+	}
+}
+
+.grid {
+	margin: 2.5em 0 0 0;
+	padding: 0;
+	@include bp(lg) {
+		padding: 2.5em 0;
+	}
+	.wrapper {
+		@include bp(lg) {
+			@include grid__container(960px);
+		}
+		@include bp(xl) {
+			@include grid__container(1170px);
+		}
+	}
+}
+
+.grid__heading-wrapper {
+	padding: 0 2.5em;
+	@include bp(lg) {
+		padding: 0;
+	}
+}
+
+.grid__heading {
+	font-weight: 400;
+	font-style: italic;
+	margin-bottom: 0.25em;
+}
+
+.grid__hr {
+	margin: 0 0 2.5em 0;
+}
+
+.grid__item {
+	margin-bottom: 3em;
+	&--small {
+		@include gallery(2);
+		@include bp(md) {
+			@include gallery(1)
+		}
+	}
+	&--medium {
+		@include span(12 of 12);
+		@include bp(md) {
+			@include span(6 of 12);
+			&:nth-of-type(2) {
+				@include span(6 of 12 last);
+			}
+		}
+	}
+	&--large {
+		@include span(12 of 12);
+	}
+	&-heading {
+		@include font-size(20px);
+	}
+	img + &-heading {
+		margin-top: 1em;
+		margin-bottom: 0;
+	}
+	&-heading + img {
+		margin-top: 1em;
+		margin-bottom: 0;
+	}
 }

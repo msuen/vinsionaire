@@ -1,0 +1,39 @@
+.feature {
+	@include container;
+	padding: 2em;
+	background-color: rgba(255,255,255,1);
+	@include filter-gradient(#ffffff, #f2f2f2, vertical);
+	@include background-image(linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(242,242,242,1) 100%));
+}
+
+.feature__image {
+	@include bp(lg) {
+		@include span(5 of 12);
+	}
+}
+
+.feature__text-container {
+	padding: 2em;
+	@include bp(lg) {
+		@include span(7 of 12 last);
+	}
+}
+
+.feature__text--heading {
+	margin: 0;
+	@include bp(xl) {
+		@include font-size(40px);
+	}
+}
+
+.feature__text--description {
+	@include font-size(14px);
+	@include font($text__family--sans, 300);
+	line-height: 1.6;
+	margin-bottom: 2.5em;
+	display: block;
+}
+
+.feature__hr {
+	margin: 1.5em 0 2em;
+}

@@ -29,7 +29,7 @@
 }
 
 // #Box Shadow Override
-@mixin box-shadow($shadow…) {
+@mixin box-shadow($shadow) {
 -webkit-box-shadow: $shadow;
 -moz-box-shadow: $shadow;
 box-shadow: $shadow;
@@ -39,6 +39,12 @@ box-shadow: $shadow;
 @mixin opacity($opacity) {
 opacity: $opacity;
 filter: alpha(opacity=$opacity*100);
+}
+
+// #Uppercase
+@mixin uppercase($letterSpacing) {
+  text-transform: uppercase;
+  letter-spacing: $letterSpacing;
 }
 
 // #Breakpoints 
@@ -83,7 +89,7 @@ filter: alpha(opacity=$opacity*100);
   transform: translateY(-50%);
 }
 
-// #Clearfix
+#Clearfix
 %clearfix {
   *zoom: 1;
   &:before, &:after {
@@ -93,7 +99,7 @@ filter: alpha(opacity=$opacity*100);
   &:after {
     clear: both;
   }
-}
+} 
 
 // #Visually Hidden (This makes the element invisible, but still accessible/readable)
 %visuallyhidden {

@@ -12,8 +12,7 @@
 @import "base/mixins";
 
 // Modules
-@import "modules/grid";
-@import "modules/nav";
+@import "modules/*";
 
 // Global States
 @import "states/states";

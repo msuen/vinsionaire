@@ -1,8 +1,28 @@
 .nav {
-	position: relative;
+	position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    height: 100vh;
+	@include single-transition(background-color,0.3s,ease-in-out);
 	@include bp(lg) {
-		height: 100px;
+		height: 64px;
 		position: fixed;
+		&.scrolled {
+			z-index: 99;
+			background-color: rgba(255,255,255,0.95);
+			@include box-shadow(0 0 1px rgba(0,0,0,0.8));
+			color: $text__color--base-dark;
+			@include single-transition(background-color,0.3s,ease-in-out);
+			.nav__links li a {
+				color: $text__color--base-dark;
+				&:hover {
+					color: $text__color--accent-light;
+				}
+			}
+		}
 	}
 	&__logo {
 		display: none;
@@ -23,29 +43,31 @@
 		visibility: hidden;
 		@include box-sizing(border-box);
 		@include opacity(0);
-		.nav__links {
+		@include bp(lg) {
+			visibility: visible;
+			padding-top: 2em;
+			height: 7em;
+			@include opacity(1);
+		}
+	}
+	&__links {
 			list-style-type: none;
 			li {
 				margin-bottom: 1.5em;
 			}
 			li a {
 				text-transform: uppercase;
+				text-decoration: none;
 				letter-spacing: 2px;
 				line-height: 1.8;
-				@include font-size(24px);
-				@include font($text__family--sans, 400);
+				@include font-size(22px);
+				@include font($text__family--sans, 300);
 				color: $text__color--soft;
 				&:hover {
-					color: $text__color--soft-light;
+					color: $text__color--accent-light;
 				}
 			}
-		}
-		@include bp(lg) {
-			visibility: visible;
-			padding-top: 2em;
-			@include opacity(1);
-			.nav__links {
-
+			@include bp(lg) {
 				&:nth-of-type(1) {
 					float: left;
 					margin-left: 2em;
@@ -54,16 +76,15 @@
 					float: right;
 					margin-right: 0.5em;
 				}
-			}
-			.nav__links li {
-				display: inline-block;
-				margin: 0 4em 0 0;
-			}
-			.nav__links li a {
-				@include font-size(16px);
+				li {
+					display: inline-block;
+					margin: 0 4em 0 0;
+				}
+				li a {
+					@include font-size(16px);
+				}
 			}
 		}
-	}
 	&__trigger {
 	    @extend %visuallyhidden;
 	    &:checked + label {
@@ -84,6 +105,7 @@
 		    }
 	    }
 	    &:checked + label + .nav__wrapper {
+	    	height: 100%;
 			z-index: 99;
 			visibility: visible;
 			background-color: rgba(0,0,0,0.75);
@@ -101,6 +123,14 @@
 		background: $color--white;
 		z-index: 20;
 		@include single-transition(opacity, 0.375s, ease, 0.15s);
+	}
+	&--black {
+		.nav__links li a {
+			color: $text__color--base-dark;
+			&:hover {
+				color: $text__color--accent-light;
+			}
+		}
 	}
 }
 
