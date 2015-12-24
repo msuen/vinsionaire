@@ -436,13 +436,16 @@ textarea {
     .hero {
       height: 80vh; } }
 
-.hero__title {
-  color: #9C8675;
+.hero__container {
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%); }
+
+.hero__title {
+  color: #9C8675;
+  margin-bottom: 1.5rem; }
 
 .cta__form, .container {
   max-width: 100%;
@@ -738,7 +741,11 @@ textarea {
       .nav__logo {
         display: block;
         float: left;
-        margin-bottom: 1rem; } }
+        margin: -1rem 2rem 0 2rem;
+        background: url("/assets/img/vinsionaire-logo-sm.svg");
+        background-size: cover;
+        width: 99px;
+        height: 38px; } }
   .nav__links:nth-of-type(1) {
     margin-bottom: 1rem; }
   .nav__wrapper {
@@ -812,7 +819,7 @@ textarea {
     height: 100%;
     z-index: 99;
     visibility: visible;
-    background-color: rgba(0, 0, 0, 0.75);
+    background-color: rgba(0, 0, 0, 0.85);
     opacity: 1;
     filter: alpha(opacity=100);
     -moz-transition: all 0.4s ease-in-out 0.15s;
@@ -835,10 +842,11 @@ textarea {
     -webkit-transition: opacity 0.375s ease;
     -webkit-transition-delay: 0.15s;
     transition: opacity 0.375s ease 0.15s; }
-  .nav--black .nav__links li a {
-    color: black; }
-    .nav--black .nav__links li a:hover {
-      color: #F8D3B7; }
+  @media (min-width: 768px) {
+    .nav--black .nav__links li a {
+      color: black; }
+      .nav--black .nav__links li a:hover {
+        color: #F8D3B7; } }
 
 label[for="nav__trigger"] {
   position: absolute;
@@ -856,11 +864,10 @@ label[for="nav__trigger"] {
     content: "";
     width: 30px;
     height: 4px;
-    -moz-transition: all 0.5s ease 0.15s;
-    -o-transition: all 0.5s ease 0.15s;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
     -webkit-transition: all 0.5s ease;
-    -webkit-transition-delay: 0.15s;
-    transition: all 0.5s ease 0.15s; }
+    transition: all 0.5s ease; }
   label[for="nav__trigger"]:after {
     position: absolute;
     top: 2.5em;
@@ -869,21 +876,27 @@ label[for="nav__trigger"] {
     content: "";
     width: 30px;
     height: 4px;
-    -moz-transition: all 0.5s ease 0.15s;
-    -o-transition: all 0.5s ease 0.15s;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
     -webkit-transition: all 0.5s ease;
-    -webkit-transition-delay: 0.15s;
-    transition: all 0.5s ease 0.15s; }
+    transition: all 0.5s ease; }
   @media (min-width: 1024px) {
     label[for="nav__trigger"] {
       display: none; } }
 
-.search {
-  position: relative;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%); }
+.nav--black label[for="nav__trigger"]:before, .nav--black label[for="nav__trigger"]:after {
+  background: #000; }
+
+.nav--black .nav__hamburger {
+  background: #000; }
+
+.nav--black .nav__trigger:checked + label:before, .nav--black .nav__trigger:checked + label:after {
+  background: #f9f9f9; }
+.nav--black .nav__trigger:checked + label .nav__hamburger {
+  background: #f9f9f9; }
+
+.no-svg .nav .nav__logo {
+  background: url("/assets/img/vinsionaire-logo-sm.png"); }
 
 .wine__description {
   max-width: 780px;

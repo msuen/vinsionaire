@@ -28,8 +28,12 @@
 		display: none;
 		@include bp(lg) {
 			display: block;
-			float: left;
-			margin-bottom: 1rem;
+		    float: left;
+		    margin: -1rem 2rem 0 2rem;
+		    background: url('/assets/img/vinsionaire-logo-sm.svg');
+		    background-size: cover;
+		    width: 99px;
+		    height: 38px;
 		}
 	}
 	&__links:nth-of-type(1) {
@@ -108,7 +112,7 @@
 	    	height: 100%;
 			z-index: 99;
 			visibility: visible;
-			background-color: rgba(0,0,0,0.75);
+			background-color: rgba(0,0,0,0.85);
 			@include opacity(1);
 			@include single-transition(all, 0.4s, ease-in-out, 0.15s);
 	    }
@@ -125,10 +129,12 @@
 		@include single-transition(opacity, 0.375s, ease, 0.15s);
 	}
 	&--black {
-		.nav__links li a {
-			color: $text__color--base-dark;
-			&:hover {
-				color: $text__color--accent-light;
+		@include bp(md) {
+			.nav__links li a {
+				color: $text__color--base-dark;
+				&:hover {
+					color: $text__color--accent-light;
+				}
 			}
 		}
 	}
@@ -150,7 +156,7 @@ label[for="nav__trigger"] {
 		content : "";
 		width: 30px;
 		height: 4px;
-		@include single-transition(all, 0.5s, ease, 0.15s);
+		@include single-transition(all, 0.5s, ease);
     }
     &:after {
 		position: absolute;
@@ -160,9 +166,32 @@ label[for="nav__trigger"] {
 		content : "";
 		width: 30px;
 		height: 4px;
-		@include single-transition(all, 0.5s, ease, 0.15s);
+		@include single-transition(all, 0.5s, ease);
     }
     @include bp(lg) {
 		display: none;
     }
+}
+
+.nav--black label[for="nav__trigger"] {
+	&:before, &:after {
+		background: $color--black;
+	}
+}
+
+.nav--black .nav__hamburger {
+	background: $color--black;
+}
+
+.nav--black .nav__trigger:checked + label {
+	&:before, &:after {
+		background: $color--white;
+	}
+	.nav__hamburger {
+		background: $color--white;
+	}
+}
+
+.no-svg .nav .nav__logo {
+	background: url('/assets/img/vinsionaire-logo-sm.png');
 }

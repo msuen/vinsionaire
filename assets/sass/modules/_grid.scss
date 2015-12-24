@@ -18,9 +18,13 @@
 	@extend %hero;
 }
 
+.hero__container {
+	@include vertical-align(relative);
+}
+
 .hero__title {
 	color: $color--accent;
-	@include vertical-align(relative);
+	margin-bottom: 1.5rem;
 }
 
 %container {

@@ -62,6 +62,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/img\/vinsionaire-logo-sm.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1211,
+		"inputAbbreviatedPath": "\/assets\/img\/vinsionaire-logo-sm.png",
+		"outputAbbreviatedPath": "\/assets\/img\/vinsionaire-logo-sm.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/js\/main.js": {
 		"fileType": 64,
 		"ignore": 0,
