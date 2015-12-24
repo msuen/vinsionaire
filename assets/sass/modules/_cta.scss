@@ -2,6 +2,10 @@
 	background-color: $background__color--secondary;
 }
 
+.cta--order {
+	@extend .cta;
+}
+
 .cta__heading {
 	@include font-size(40px);
 	color: $text__color--accent-light;
@@ -13,6 +17,7 @@
 }
 
 .cta__caption {
+	clear: both;
 	@include font-size(16px);
 	@include font($text__family--sans,300);
 	color: $text__color--soft-light;
@@ -32,6 +37,16 @@
     &-1, &-2 {
 		@include opacity(0.4);
 		border-top: 1px $text__color--accent-light solid;
+    }
+}
+
+.cta--order .cta__hr {
+	&-1 {
+    	@include bp(md) {
+		    width: -moz-calc(100% - 250px);
+		    width: -webkit-calc(100% - 250px);
+		    width: calc(100% - 250px);
+    	}
     }
 }
 
