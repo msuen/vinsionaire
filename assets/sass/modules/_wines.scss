@@ -6,10 +6,10 @@
 }
 
 .wine {
+	padding: 2.5em 2em 5em 2em;
 	.wrapper {
 		@media only screen and (max-width: 1023px) {
 			@include container();
-			padding: 2.5em 2em 5em 2em;
 		}
 	}
 	&__image {
@@ -19,7 +19,7 @@
 		&:nth-of-type(2) {
 			@include span(6 of 12 last);
 		}
-		@include bp(md) {
+		@include bp(lg) {
 			&:nth-of-type(1), 
 			&:nth-of-type(2) {
 				@include span(4 of 12);
@@ -27,9 +27,37 @@
 		}
 	}
 	&__details {
+		padding-left: 2.5em;
+		margin-top: 5em;
 		@include span(12 of 12);
-		@include bp(md) {
+		@include bp(lg) {
+			margin-top: 0;
 			@include span(4 of 12 last);
+		}
+	}
+	&__price {
+		margin-bottom: 0.375em;
+		span {
+			@include font-size(12px);
+		}
+	}
+	&__region, &__size {
+		color: $color--soft-dark;
+		display: block;
+		@include uppercase(0.5px);
+		@include font-size(10px);
+	}
+	&__note {
+		border-left: 2px $color--accent solid;
+		font-weight: bold;
+		padding-left: 2.5em;
+		margin-top: 2.5em;
+		p {
+			color: $color--accent;
+		}
+		footer {
+			@include font-size(16px);
+			color: $color--accent;
 		}
 	}
 }

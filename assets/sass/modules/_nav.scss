@@ -6,6 +6,7 @@
     bottom: 0;
     height: 100%;
     height: 100vh;
+    z-index: 3;
 	@include single-transition(background-color,0.3s,ease-in-out);
 	@include bp(lg) {
 		height: 64px;
@@ -129,7 +130,7 @@
 		@include single-transition(opacity, 0.375s, ease, 0.15s);
 	}
 	&--black {
-		@include bp(md) {
+		@include bp(lg) {
 			.nav__links li a {
 				color: $text__color--base-dark;
 				&:hover {

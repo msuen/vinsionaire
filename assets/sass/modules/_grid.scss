@@ -1,10 +1,13 @@
 %hero {
-	padding: 2.5em;
 	background-color: #000;
 	height: 450px;
 	height: 100vh;
 	min-height: 450px;
 	max-height: 750px;
+	position: relative;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
 	@include bp(lg) {
 		height: 80vh;
 	}
@@ -16,15 +19,42 @@
 
 .hero {
 	@extend %hero;
+	&--home {
+		@include background(image-url("home-hero.jpg"));
+		position: relative;
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		.hero__overlay {
+			background-color: rgba(0,0,0,0.35);
+		}
+	}
+	&--article {
+		.hero__overlay {
+			background-color: rgba(0,0,0,0.45);
+		}
+	}
+	&__overlay {
+		height: 100%;
+		width: 100%;
+		position: absolute;
+		z-index: 1;
+	}
 }
 
 .hero__container {
 	@include vertical-align(relative);
+	z-index: 2;
+	max-width: 780px;
+	margin: 0 auto 1.5rem;
 }
 
 .hero__title {
+	color: $color--accent-light;
+}
+
+.hero__date {
 	color: $color--accent;
-	margin-bottom: 1.5rem;
 }
 
 %container {
@@ -114,4 +144,10 @@
 		margin-top: 1em;
 		margin-bottom: 0;
 	}
+}
+
+.grid__blog-image {
+	width: 100%;
+	background-size: contain;
+	background-position: center
 }

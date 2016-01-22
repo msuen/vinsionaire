@@ -82,10 +82,6 @@
 .list__size {
 	color: $color--soft-dark;
 	display: block;
-}
-
-.list__region,
-.list__size {
 	@include uppercase(0.5px);
 	@include font-size(10px);
 }

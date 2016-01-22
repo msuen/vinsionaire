@@ -1,0 +1,69 @@
+%input {
+	height: 48px;
+	background-color: $color--white;
+	border: $border__base;
+	border-radius: $border__radius--base;
+	@include box-shadow(none);
+	@include box-sizing(border-box);
+	font-size: 16px;
+	font-size: 1.6rem;
+	color: $text__color--base;
+	padding: 1.5em;
+	vertical-align: middle;
+	font-family: $text__family--serif;
+	font-weight: $text__weight;
+	&:focus {
+		outline: none;
+		border: $border--base-light;
+	}
+}
+
+%input--clear {
+	background-color: rgba(255,255,255,0.2);
+	color: $color--white;
+	border: 1px solid rgba(255,255,255,0);
+	&:focus {
+		border: $border--accent-light;
+	}
+}
+
+%input--outline {
+	background-color: transparent;
+	color: $color--white;
+	border: $border--base;
+	&:focus {
+		border: $border--base-light;
+	}
+}
+
+%input--outline-accent {
+	background-color: rgba(0,0,0,0.5);
+	color: $color--white;
+	border: $border--accent;
+	&:focus {
+		border: $border--accent-light;
+	}
+}
+
+%input--outline-accent-light {
+	background-color: transparent;
+	color: $color--white;
+	border: $border--accent-light;
+	&:focus {
+		border: $border--base-light;
+	}
+}
+
+.search {
+	display: inline-block;
+	position: relative;
+}
+
+.search__field.search__field {
+	@extend %input;
+	@extend %input--outline-accent;
+	width: 100%;
+	@include bp(md) {
+		width: 700px;
+	}
+}

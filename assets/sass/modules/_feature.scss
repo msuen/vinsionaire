@@ -7,8 +7,13 @@
 }
 
 .feature__image {
+	background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 600px;
 	@include bp(lg) {
 		@include span(5 of 12);
+	    min-height: 450px;
 	}
 }
 
