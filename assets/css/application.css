@@ -350,7 +350,7 @@ textarea {
     border: 1px solid #F8D3B7; }
 
 .cta, .cta--order {
-  background: url('/assets/img/home-hero.jpg?1453352757');
+  background: url('../img/home-hero.jpg?1453352757');
   background-size: cover;
   background-position: center center;
   position: relative; }
@@ -487,7 +487,7 @@ textarea {
       height: 80vh; } }
 
 .hero--home {
-  background: url('/assets/img/home-hero.jpg?1453352757');
+  background: url('../img/home-hero.jpg?1453352757');
   position: relative;
   background-position: center center;
   background-repeat: no-repeat;

@@ -67,7 +67,7 @@
 		"outputAbbreviatedPath": "\/assets\/img\/article-amoureuses.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/assets\/img\/article-domenico-1.jpg": {
 		"fileType": 16384,
@@ -78,7 +78,7 @@
 		"outputAbbreviatedPath": "\/assets\/img\/article-domenico-1.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/assets\/img\/article-domenico-2.jpg": {
 		"fileType": 16384,
@@ -89,7 +89,7 @@
 		"outputAbbreviatedPath": "\/assets\/img\/article-domenico-2.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/assets\/img\/article-domenico-splash.jpg": {
 		"fileType": 16384,
@@ -100,7 +100,7 @@
 		"outputAbbreviatedPath": "\/assets\/img\/article-domenico-splash.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/assets\/img\/article-domenico.jpg": {
 		"fileType": 16384,
@@ -111,7 +111,7 @@
 		"outputAbbreviatedPath": "\/assets\/img\/article-domenico.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/assets\/img\/article-henri.jpg": {
 		"fileType": 16384,
@@ -122,7 +122,7 @@
 		"outputAbbreviatedPath": "\/assets\/img\/article-henri.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/assets\/img\/article-jadot.jpg": {
 		"fileType": 16384,
@@ -133,7 +133,7 @@
 		"outputAbbreviatedPath": "\/assets\/img\/article-jadot.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/assets\/img\/brion-wine.jpg": {
 		"fileType": 16384,
@@ -144,7 +144,7 @@
 		"outputAbbreviatedPath": "\/assets\/img\/brion-wine.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/assets\/img\/home-hero.jpg": {
 		"fileType": 16384,
@@ -155,7 +155,7 @@
 		"outputAbbreviatedPath": "\/assets\/img\/home-hero.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/assets\/img\/jadot-wine.jpg": {
 		"fileType": 16384,
@@ -166,7 +166,7 @@
 		"outputAbbreviatedPath": "\/assets\/img\/jadot-wine.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/assets\/img\/jayer-wine.jpg": {
 		"fileType": 16384,
@@ -177,7 +177,7 @@
 		"outputAbbreviatedPath": "\/assets\/img\/jayer-wine.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/assets\/img\/latache-wine.jpg": {
 		"fileType": 16384,
@@ -188,7 +188,7 @@
 		"outputAbbreviatedPath": "\/assets\/img\/latache-wine.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/assets\/img\/mouton-wine.jpg": {
 		"fileType": 16384,
@@ -199,7 +199,7 @@
 		"outputAbbreviatedPath": "\/assets\/img\/mouton-wine.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/assets\/img\/pavie-wine.jpg": {
 		"fileType": 16384,
@@ -210,7 +210,7 @@
 		"outputAbbreviatedPath": "\/assets\/img\/pavie-wine.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/assets\/img\/tile-wide.png": {
 		"fileType": 32768,
