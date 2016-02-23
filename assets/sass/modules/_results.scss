@@ -1,0 +1,74 @@
+.results {
+	@include container;
+	margin: 2.5em auto;
+	padding: 2.5em 0;
+	max-width: 1170px;
+}
+
+.results .list__item {
+	@include container;
+	width: 100%;
+	position: relative;
+	margin-bottom: 2.5em;
+	padding: 2em;
+	background-color: $color--white;
+	color: $text__color--base;
+	text-decoration: none;
+	text-align: center;
+	min-height: 170px;
+	@include single-transition(background-color,0.3s,ease-in-out);
+	@include bp(md) {
+		text-align: left;
+	}
+	&:hover {
+		color: $text__color--base;
+		background-color: lighten($color--accent-light,3%);
+	}
+}
+
+.results .list__heading-wrapper {
+	margin-top: 2.5em;
+}
+
+.results .list__image {
+	@include bp(sm) {
+		@include span(2 of 12);
+		max-width: 100px;
+		@include vertical-align(absolute);
+		left: 1.69492%;
+	}
+}
+
+.results .list__description {
+	@include bp(sm) {
+		@include span(8 of 12);
+	}
+}
+
+.results .list__description-wrapper {
+	@include bp(sm) {
+		@include span(10 of 12 last);
+		@include vertical-align(absolute);
+		left: 16.94916%;
+		padding-right: 1.69492%;
+	}
+}
+
+.results .list__description--year {
+	margin-bottom: 1em;
+	@include bp(sm) {
+		@include span(2 of 12);
+		margin-bottom: 0;
+	}
+}
+
+.results .list__year {
+	@include font-size(18px);
+	@include font($text__family--serif, 300);
+}
+
+.results .list__description--price {
+	@include bp(sm) {
+		@include span(2 of 12 last);
+	}
+}

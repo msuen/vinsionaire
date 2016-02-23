@@ -162,6 +162,15 @@ ol,
 form {
   margin-bottom: 2.5rem; }
 
+.wrapper {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto; }
+  .wrapper:after {
+    content: " ";
+    display: block;
+    clear: both; }
+
 /*----------------------------------------
   #MIXINS
 ----------------------------------------*/
@@ -177,6 +186,7 @@ form {
 
 @media (min-width: 768px) {
   .about__text {
+    margin: 2.5em 0;
     text-align: left;
     padding-right: 5.26316%;
     width: 57.62712%;
@@ -187,6 +197,7 @@ form {
   text-align: center; }
   @media (min-width: 768px) {
     .about__image {
+      margin: 2.5em 0;
       width: 40.67797%;
       float: right;
       margin-right: 0; } }
@@ -296,9 +307,9 @@ form {
   color: #9B9B9B;
   display: block;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
-  font-size: 10px;
-  font-size: 1rem;
+  letter-spacing: 1px;
+  font-size: 14px;
+  font-size: 1.4rem;
   margin-bottom: 2em; }
 
 input[type="email"],
@@ -496,6 +507,13 @@ textarea {
     background-color: rgba(0, 0, 0, 0.35); }
 .hero--article .hero__overlay {
   background-color: rgba(0, 0, 0, 0.45); }
+.hero--search {
+  height: 300px;
+  min-height: 300px; }
+  @media (min-width: 768px) {
+    .hero--search {
+      height: 225px;
+      min-height: 225px; } }
 .hero__overlay {
   height: 100%;
   width: 100%;
@@ -508,9 +526,22 @@ textarea {
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  z-index: 2;
-  max-width: 780px;
+  z-index: 3;
+  max-width: 1170px;
   margin: 0 auto 1.5rem; }
+
+.hero--search .hero__container {
+  max-width: 11;
+  padding: 0 30px; }
+
+.hero--search .search {
+  display: block; }
+
+.hero--search .search__field.search__field {
+  width: 100% !important; }
+  @media (min-width: 768px) {
+    .hero--search .search__field.search__field {
+      margin-bottom: 0; } }
 
 .hero__title {
   color: #F8D3B7; }
@@ -710,7 +741,11 @@ textarea {
   background-color: #f9f9f9;
   color: #222;
   text-decoration: none;
-  text-align: center; }
+  text-align: center;
+  -moz-transition: background-color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out; }
   .list__item:after {
     content: " ";
     display: block;
@@ -728,20 +763,21 @@ textarea {
     .list__item {
       text-align: left; } }
   .list__item:hover {
-    color: #222; }
+    color: #222;
+    background-color: #f9dcc5; }
 
 .list__image {
   margin-bottom: 1em; }
   @media (min-width: 768px) {
     .list__image {
       margin-bottom: 0;
-      width: 15.25424%;
+      width: 23.72881%;
       float: left;
       margin-right: 1.69492%; } }
 
 @media (min-width: 768px) {
   .list__description {
-    width: 83.05085%;
+    width: 74.57627%;
     float: right;
     margin-right: 0;
     padding-left: 5.26316%; } }
@@ -759,7 +795,7 @@ textarea {
 .list__price {
   color: #363636; }
 
-.list__region,
+.list__name,
 .list__size {
   color: #9B9B9B;
   display: block;
@@ -785,13 +821,13 @@ textarea {
   bottom: 0;
   height: 100%;
   height: 100vh;
-  z-index: 3;
   -moz-transition: background-color 0.3s ease-in-out;
   -o-transition: background-color 0.3s ease-in-out;
   -webkit-transition: background-color 0.3s ease-in-out;
   transition: background-color 0.3s ease-in-out; }
   @media (min-width: 1024px) {
     .nav {
+      z-index: 3;
       height: 64px;
       position: fixed; }
       .nav.scrolled {
@@ -971,6 +1007,102 @@ label[for="nav__trigger"] {
 
 .no-svg .nav .nav__logo {
   background: url("/assets/img/vinsionaire-logo-sm.png"); }
+
+.results {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 2.5em auto;
+  padding: 2.5em 0;
+  max-width: 1170px; }
+  .results:after {
+    content: " ";
+    display: block;
+    clear: both; }
+
+.results .list__item {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  position: relative;
+  margin-bottom: 2.5em;
+  padding: 2em;
+  background-color: #f9f9f9;
+  color: #222;
+  text-decoration: none;
+  text-align: center;
+  min-height: 170px;
+  -moz-transition: background-color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out; }
+  .results .list__item:after {
+    content: " ";
+    display: block;
+    clear: both; }
+  @media (min-width: 768px) {
+    .results .list__item {
+      text-align: left; } }
+  .results .list__item:hover {
+    color: #222;
+    background-color: #f9dcc5; }
+
+.results .list__heading-wrapper {
+  margin-top: 2.5em; }
+
+@media (min-width: 480px) {
+  .results .list__image {
+    width: 15.25424%;
+    float: left;
+    margin-right: 1.69492%;
+    max-width: 100px;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    left: 1.69492%; } }
+
+@media (min-width: 480px) {
+  .results .list__description {
+    width: 66.10169%;
+    float: left;
+    margin-right: 1.69492%; } }
+
+@media (min-width: 480px) {
+  .results .list__description-wrapper {
+    width: 83.05085%;
+    float: right;
+    margin-right: 0;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    left: 16.94916%;
+    padding-right: 1.69492%; } }
+
+.results .list__description--year {
+  margin-bottom: 1em; }
+  @media (min-width: 480px) {
+    .results .list__description--year {
+      width: 15.25424%;
+      float: left;
+      margin-right: 1.69492%;
+      margin-bottom: 0; } }
+
+.results .list__year {
+  font-size: 18px;
+  font-size: 1.8rem;
+  font-family: "Playfair Display", Georgia, serif;
+  font-weight: 300; }
+
+@media (min-width: 480px) {
+  .results .list__description--price {
+    width: 15.25424%;
+    float: right;
+    margin-right: 0; } }
 
 .cta__input, .search__field {
   height: 48px;

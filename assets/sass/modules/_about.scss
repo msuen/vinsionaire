@@ -1,5 +1,6 @@
 .about__text {
 	@include bp(md) {
+		margin: 2.5em 0;
 		text-align: left;
 		padding-right: gutter();
 		@include span(7 of 12);
@@ -9,6 +10,7 @@
 .about__image {
 	text-align: center;
 	@include bp(md) {
+		margin: 2.5em 0;
 		@include span(5 of 12 last);
 	}
 }

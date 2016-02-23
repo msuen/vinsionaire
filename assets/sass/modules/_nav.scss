@@ -6,9 +6,9 @@
     bottom: 0;
     height: 100%;
     height: 100vh;
-    z-index: 3;
 	@include single-transition(background-color,0.3s,ease-in-out);
 	@include bp(lg) {
+		z-index: 3;
 		height: 64px;
 		position: fixed;
 		&.scrolled {

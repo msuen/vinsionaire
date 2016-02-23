@@ -34,6 +34,14 @@
 			background-color: rgba(0,0,0,0.45);
 		}
 	}
+	&--search {
+		height: 300px;
+		min-height: 300px;
+		@include bp(md) {
+			height: 225px;
+			min-height: 225px;
+		}
+	}
 	&__overlay {
 		height: 100%;
 		width: 100%;
@@ -44,9 +52,25 @@
 
 .hero__container {
 	@include vertical-align(relative);
-	z-index: 2;
-	max-width: 780px;
+	z-index: 3;
+	max-width: 1170px;
 	margin: 0 auto 1.5rem;
+}
+
+.hero--search .hero__container {
+	max-width: 11;
+	padding: 0 30px;
+}
+
+.hero--search .search {
+	display: block;
+}
+
+.hero--search .search__field.search__field {
+	width: 100% !important;
+	@include bp(md) {
+		margin-bottom: 0;
+	}
 }
 
 .hero__title {

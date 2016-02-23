@@ -109,7 +109,7 @@
 .back__button {
 	color: $color--soft-dark;
 	display: block;
-	@include uppercase(0.5px);
-	@include font-size(10px);
+	@include uppercase(1px);
+	@include font-size(14px);
 	margin-bottom: 2em;
 }

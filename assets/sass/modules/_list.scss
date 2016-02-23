@@ -41,11 +41,13 @@
 	color: $text__color--base;
 	text-decoration: none;
 	text-align: center;
+	@include single-transition(background-color,0.3s,ease-in-out);
 	@include bp(md) {
 		text-align: left;
 	}
 	&:hover {
 		color: $text__color--base;
+		background-color: lighten($color--accent-light,3%);
 	}
 }
 
@@ -53,13 +55,13 @@
 	margin-bottom: 1em;
 	@include bp(md) {
 		margin-bottom: 0;
-		@include span(2 of 12);
+		@include span(3 of 12);
 	}
 }
 
 .list__description {
 	@include bp(md) {
-		@include span(10 of 12 last);
+		@include span(9 of 12 last);
 		padding-left: gutter();
 	}
 }
@@ -78,7 +80,7 @@
 	color: $color--primary-light;
 }
 
-.list__region,
+.list__name,
 .list__size {
 	color: $color--soft-dark;
 	display: block;
