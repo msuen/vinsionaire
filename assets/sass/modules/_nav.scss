@@ -23,6 +23,12 @@
 					color: $text__color--accent-light;
 				}
 			}
+			.nav__search-box + label .icon-search {
+				color: $text__color--base-dark;
+			}
+			.nav__search-box:focus + label .icon-search {
+				color: $text__color--soft;
+			}	
 		}
 	}
 	&__logo {
@@ -30,7 +36,7 @@
 		@include bp(lg) {
 			display: block;
 		    float: left;
-		    margin: -1rem 2rem 0 2rem;
+		    margin: 0 2rem 0 2rem;
 		    background: url('/assets/img/vinsionaire-logo-sm.svg');
 		    background-size: cover;
 		    width: 99px;
@@ -50,7 +56,7 @@
 		@include opacity(0);
 		@include bp(lg) {
 			visibility: visible;
-			padding-top: 2em;
+			padding-top: 1em;
 			height: 7em;
 			@include opacity(1);
 		}
@@ -75,47 +81,58 @@
 			@include bp(lg) {
 				&:nth-of-type(1) {
 					float: left;
+					padding-top: 1em;
 					margin-left: 2em;
+					& li:nth-of-type(5) {
+						margin: 0 !important;
+					}
 				}
 				&:nth-of-type(2) {
 					float: right;
 					margin-right: 0.5em;
+				}
+				li.nav__login {
+					padding-top: 1em;
 				}
 				li {
 					display: inline-block;
 					margin: 0 4em 0 0;
 				}
 				li a {
-					@include font-size(16px);
+					@include font-size(13px);
 				}
 			}
 		}
 	&__trigger {
 	    @extend %visuallyhidden;
 	    &:checked + label {
-	    	position: fixed;
-	    	&:after {
-	    		@include rotate(45deg);
-	    		top: 1.4em;
-	    	}
-	    	&:before {
-	    		@include rotate(-45deg);
-	    		top: 1.4em;
-	    	}
-	    	& .nav__hamburger {
-		    	@include opacity(0);
-		    }
-		    @include bp(lg) {
-				display: none;
-		    }
+	    	@media only screen and (max-width: 1023px) {
+		    	position: fixed;
+		    	&:after {
+		    		@include rotate(45deg);
+		    		top: 1.4em;
+		    	}
+		    	&:before {
+		    		@include rotate(-45deg);
+		    		top: 1.4em;
+		    	}
+		    	& .nav__hamburger {
+			    	@include opacity(0);
+			    }
+			    @include bp(lg) {
+					display: none;
+			    }
+			}
 	    }
 	    &:checked + label + .nav__wrapper {
-	    	height: 100%;
-			z-index: 99;
-			visibility: visible;
-			background-color: rgba(0,0,0,0.85);
-			@include opacity(1);
-			@include single-transition(all, 0.4s, ease-in-out, 0.15s);
+	    	@media only screen and (max-width: 1023px) {
+		    	height: 100%;
+				z-index: 99;
+				visibility: visible;
+				background-color: rgba(0,0,0,0.85);
+				@include opacity(1);
+				@include single-transition(all, 0.4s, ease-in-out, 0.15s);
+	    	}
 	    }
 	}
 	&__hamburger {
@@ -131,6 +148,9 @@
 	}
 	&--black {
 		@include bp(lg) {
+			.nav__search-box + label .icon-search {
+				color: $text__color--base-dark;
+			}
 			.nav__links li a {
 				color: $text__color--base-dark;
 				&:hover {
@@ -194,5 +214,5 @@ label[for="nav__trigger"] {
 }
 
 .no-svg .nav .nav__logo {
-	background: url('/assets/img/vinsionaire-logo-sm.png');
+	background: url('../img/vinsionaire-logo-sm.png');
 }

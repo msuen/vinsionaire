@@ -12,6 +12,7 @@
         <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,900,900italic,400italic|Muli:300,300italic,400' rel='stylesheet' type='text/css'>
         <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
         <link rel="stylesheet" href="assets/css/application.css">
+        <link rel="stylesheet" href="assets/css/feather.css">
 
         <script src="assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
@@ -35,8 +36,14 @@
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
                 <ul class="nav__links">
-                    <li><a href="search.html">Search</a></li>
-                    <li><a href="login.html">Log In</a></li>
+                    <li class="nav__search">
+                        <form class="nav__search-form" action="">
+                          <input id="nav__search-box" type="text" class="nav__search-box" name="q" />
+                          <label for="nav__search-box"><span class="icon-search"></span></label>
+                          <input type="submit" id="nav__search-submit" />
+                        </form>
+                    </li>
+                    <li class="nav__login"><a href="login.html">Login</a></li>
                 </ul>
             </div>
         </nav>
@@ -47,10 +54,11 @@
                     <h2>For wine lovers, blind tasting can be great fun but the same cannot be said about blind buying.</h2>
                     <p>Unfortunately, this is the bane of wine buyers and a shopper is often confronted with a dizzying array of wines with no information as to its quality. There are no answers to simple but key questions such as what does the critics think of the wine, what does the wine taste like, when is the wine predicted to be at its best.</p>
                     <p>Vinsionaire is offering an innovative shopper-friendly wine purchasing experience. We are taking the guesswork out of wine buying by offering only wines that are rated 90+ by world renowned wine critics or publications, including Robert Parker, Jr., Wine Spectator, Wine Advocate, …, etc. And you will be pleasantly surprised to find that there is a range of prices suitable to all budgets, even for these highly rated wines.</p>
-                    <h3>Our shop is modest but our vision is grand. We want our customers to drink good wine all the time.</h3>
-                    <p>We have acquired a well thought-out collection of fine and premium wine. Some are in stock at our shop and some are stored in bond in the United Kingdom. We are regularly making new acquisitions, so stay tuned to this site.</p>
                 </div>
-                <img src="http://placehold.it/286x362" class="about__image">
+                <figure class="about__image">
+                    <img src="assets/img/about-hero.jpg" class="max-full-width">
+                    <figcaption>Our shop is modest but our vision is grand. We want our customers to drink good wine all the time.</figcaption>
+                </figure>
             </section>
 
             <section class="cta">
@@ -63,7 +71,7 @@
                     <span class="cta__caption text-center">Sign up for our website to receive special access to our features on wine and our event space in Hong Kong.</span>
                     <div class="cta__field">
                         <input type="email" name="email" placeholder="Your Email Address" class="cta__input" />
-                        <input type="submit" value="Sign Up" class="cta__button">
+                        <input type="submit" value="Sign Up" class="cta__button cta__button--integrated">
                     </div>
                     <hr class="cta__hr-2">
                 </form>

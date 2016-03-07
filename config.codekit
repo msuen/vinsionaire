@@ -47,6 +47,26 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/assets\/css\/feather.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/css\/feather.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/assets\/img\/about-hero.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 227722,
+		"inputAbbreviatedPath": "\/assets\/img\/about-hero.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/about-hero.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/img\/apple-touch-icon.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -150,12 +170,12 @@
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 453069,
+		"initialSize": 386553,
 		"inputAbbreviatedPath": "\/assets\/img\/home-hero.jpg",
 		"outputAbbreviatedPath": "\/assets\/img\/home-hero.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 1
+		"processed": 0
 		},
 	"\/assets\/img\/jadot-wine.jpg": {
 		"fileType": 16384,
@@ -189,6 +209,50 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 1
+		},
+	"\/assets\/img\/location-australia.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 216076,
+		"inputAbbreviatedPath": "\/assets\/img\/location-australia.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/location-australia.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/location-germany.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 39155,
+		"inputAbbreviatedPath": "\/assets\/img\/location-germany.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/location-germany.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/location-italy.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 99061,
+		"inputAbbreviatedPath": "\/assets\/img\/location-italy.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/location-italy.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/location-us.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 86045,
+		"inputAbbreviatedPath": "\/assets\/img\/location-us.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/location-us.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
 		},
 	"\/assets\/img\/mouton-wine.jpg": {
 		"fileType": 16384,
@@ -241,6 +305,50 @@
 		"initialSize": 1211,
 		"inputAbbreviatedPath": "\/assets\/img\/vinsionaire-logo-sm.png",
 		"outputAbbreviatedPath": "\/assets\/img\/vinsionaire-logo-sm.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/wine-bordeaux.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 608835,
+		"inputAbbreviatedPath": "\/assets\/img\/wine-bordeaux.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/wine-bordeaux.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/wine-burgundy.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 145874,
+		"inputAbbreviatedPath": "\/assets\/img\/wine-burgundy.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/wine-burgundy.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/wine-champagne.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 130275,
+		"inputAbbreviatedPath": "\/assets\/img\/wine-champagne.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/wine-champagne.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/wine-rhone.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 414695,
+		"inputAbbreviatedPath": "\/assets\/img\/wine-rhone.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/wine-rhone.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -577,6 +685,15 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/login.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/login.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0

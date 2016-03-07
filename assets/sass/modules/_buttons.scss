@@ -75,8 +75,10 @@
 .cta__button {
 	@extend %button;
 	@extend %button--solid-accent-light;
-	@extend %button--integrated;
 	@extend %button--small;
+	&--integrated {
+		@extend %button--integrated;
+	}
 }
 
 .feature__button {
@@ -103,6 +105,11 @@
 	.search__field:focus + & {
 		border: 1px solid $color--accent-light;
 		background-color: $color--accent-light;
+	}
+	.search__field:focus + &:hover {
+		border: 1px solid $color--accent;
+		background-color: $color--accent;
+		color: $text__color--soft;
 	}
 }
 

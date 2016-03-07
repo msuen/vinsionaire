@@ -67,3 +67,66 @@
 		width: 700px;
 	}
 }
+
+.nav__search.nav__search {
+	margin: 0;
+	display: none;
+	@include bp(lg) {
+		display: inline-block;
+	}
+}
+
+.nav__search-box {
+	float: right;
+	top: 0;
+	margin-right: 2em;
+	transition: width 0.6s;
+	background: transparent;
+	width: 40px;
+	height: 40px;
+	border: none;
+	cursor: pointer;
+	font-family: $text__family--serif;
+	& + label .icon-search {
+		color: $text__color--soft;
+	}
+	&:hover {
+		& + label .icon-search {    
+			color: $color--accent-light;
+		}
+	}
+  &:focus {
+  	margin-top: -1em;
+	@include font-size(12px);
+    transition: width 0.6s cubic-bezier(0,1.22,.66,1.39);
+    background: rgba(0,0,0,0.45);
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    padding-left: 40px;
+    cursor: text;
+    width: 200px;
+    border-radius: auto;
+    color: $text__color--soft;
+    & + label .icon-search {
+		color: $text__color--soft;
+    }
+  }
+  &:not(:focus) {
+	  text-indent:-5000px;
+  } // for more-graceful falling back (:not browsers likely support indent)
+}
+
+#nav__search-submit {
+	position: relative;
+	left: -5000px;
+}
+
+.icon-search {
+	@include font-size(16px);
+	position: relative;
+	left: 83px;
+	color: white;
+	cursor: pointer;
+}

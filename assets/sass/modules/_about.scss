@@ -13,4 +13,11 @@
 		margin: 2.5em 0;
 		@include span(5 of 12 last);
 	}
+	figcaption {
+		text-align: left;
+		margin-top: 1em;
+		@include font-size(18px);
+		font-family: $text__family--serif;
+		font-weight: $text__weight;
+	}
 }

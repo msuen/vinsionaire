@@ -1,6 +1,17 @@
-$('#nav__trigger').change(function(){
-    var c = this.checked ? 'hidden' : 'auto';
-    $('body').css('overflow', c);
+function checkMq() {
+    if (Modernizr.mq('only screen and (max-width: 767px)')) {
+        $('#nav__trigger').change(function(){
+        var c = this.checked ? 'hidden' : 'auto';
+        $('body').css('overflow', c);
+        });
+    }
+}
+
+$(function() {
+    checkMq();
+    $(window).resize(function() {
+        checkMq();
+    });
 });
 
 if($('.nav + div').hasClass("content-nohero")){

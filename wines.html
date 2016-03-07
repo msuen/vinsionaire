@@ -12,6 +12,7 @@
         <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,900,900italic,400italic|Muli:300,300italic,400' rel='stylesheet' type='text/css'>
         <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
         <link rel="stylesheet" href="assets/css/application.css">
+        <link rel="stylesheet" href="assets/css/feather.css">
 
         <script src="assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
@@ -35,8 +36,14 @@
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
                 <ul class="nav__links">
-                    <li><a href="search.html">Search</a></li>
-                    <li><a href="login.html">Log In</a></li>
+                    <li class="nav__search">
+                        <form class="nav__search-form" action="">
+                          <input id="nav__search-box" type="text" class="nav__search-box" name="q" />
+                          <label for="nav__search-box"><span class="icon-search"></span></label>
+                          <input type="submit" id="nav__search-submit" />
+                        </form>
+                    </li>
+                    <li class="nav__login"><a href="login.html">Login</a></li>
                 </ul>
             </div>
         </nav>
@@ -50,7 +57,7 @@
                     </div>
                     <div class="container">
                         <a href="wine-individual.html" class="list__item">
-                            <img src="http://placehold.it/300x400" class="list__image max-full-width">
+                            <img src="assets/img/latache-wine.jpg" class="list__image max-full-width">
                             <div class="list__description">
                                 <span class="list__name">Baronne Philippine de Rothschild</span>
                                 <h3 class="list__item-heading">1945 Château Mouton Rothschild</h3>
@@ -59,7 +66,7 @@
                             </div>
                         </a>
                         <a href="wine-individual.html" class="list__item">
-                            <img src="http://placehold.it/300x400" class="list__image max-full-width">
+                            <img src="assets/img/latache-wine.jpg" class="list__image max-full-width">
                             <div class="list__description">
                                 <span class="list__name">Baronne Philippine de Rothschild</span>
                                 <h3 class="list__item-heading">1945 Château Mouton Rothschild</h3>
@@ -68,7 +75,7 @@
                             </div>
                         </a>
                         <a href="wine-individual.html" class="list__item">
-                            <img src="http://placehold.it/300x400" class="list__image max-full-width">
+                            <img src="assets/img/latache-wine.jpg" class="list__image max-full-width">
                             <div class="list__description">
                                 <span class="list__name">Baronne Philippine de Rothschild</span>
                                 <h3 class="list__item-heading">1945 Château Mouton Rothschild</h3>
@@ -77,7 +84,7 @@
                             </div>
                         </a>
                         <a href="wine-individual.html" class="list__item">
-                            <img src="http://placehold.it/300x400" class="list__image max-full-width">
+                            <img src="assets/img/latache-wine.jpg" class="list__image max-full-width">
                             <div class="list__description">
                                 <span class="list__name">Baronne Philippine de Rothschild</span>
                                 <h3 class="list__item-heading">1945 Château Mouton Rothschild</h3>
@@ -94,36 +101,20 @@
                     </div>
                     <div class="container">
                         <div class="grid__item grid__item--small text-center">
-                            <img src="http://placehold.it/364x364" class="max-full-width">
-                            <h3 class="grid__item-heading">Bordeaux (Rogue)</h3>
+                            <div class="grid__image-container grid__image-container--bordeaux"></div>
+                            <h3 class="grid__item-heading">Bordeaux</h3>
                         </div>
                         <div class="grid__item grid__item--small text-center">
-                            <img src="http://placehold.it/364x364" class="max-full-width">
-                            <h3 class="grid__item-heading">Bordeaux (Blanc)</h3>
+                            <div class="grid__image-container grid__image-container--burgundy"></div>
+                            <h3 class="grid__item-heading">Burgundy</h3>
                         </div>
                         <div class="grid__item grid__item--small text-center">
-                            <img src="http://placehold.it/364x364" class="max-full-width">
-                            <h3 class="grid__item-heading">Bordeaux (Saut)</h3>
-                        </div>
-                        <div class="grid__item grid__item--small text-center">
-                            <img src="http://placehold.it/364x364" class="max-full-width">
-                            <h3 class="grid__item-heading">Burgundy (Rogue)</h3>
-                        </div>
-                        <div class="grid__item grid__item--small text-center">
-                            <img src="http://placehold.it/364x364" class="max-full-width">
-                            <h3 class="grid__item-heading">Burgundy (Blanc)</h3>
-                        </div>
-                        <div class="grid__item grid__item--small text-center">
-                            <img src="http://placehold.it/364x364" class="max-full-width">
+                            <div class="grid__image-container grid__image-container--champagne"></div>
                             <h3 class="grid__item-heading">Champagne</h3>
                         </div>
                         <div class="grid__item grid__item--small text-center">
-                            <img src="http://placehold.it/364x364" class="max-full-width">
-                            <h3 class="grid__item-heading">Rhone (Rogue)</h3>
-                        </div>
-                        <div class="grid__item grid__item--small text-center">
-                            <img src="http://placehold.it/364x364" class="max-full-width">
-                            <h3 class="grid__item-heading">Rhone (Blanc)</h3>
+                            <div class="grid__image-container grid__image-container--rhone"></div>
+                            <h3 class="grid__item-heading">Rhone</h3>
                         </div>
                     </div>
                 </div>
@@ -134,36 +125,20 @@
                     </div>
                     <div class="container">
                         <div class="grid__item grid__item--small text-center">
-                            <img src="http://placehold.it/364x364" class="max-full-width">
-                            <h3 class="grid__item-heading">Australia (Red)</h3>
+                            <div class="grid__image-container grid__image-container--australia"></div>
+                            <h3 class="grid__item-heading">Australia</h3>
                         </div>
                         <div class="grid__item grid__item--small text-center">
-                            <img src="http://placehold.it/364x364" class="max-full-width">
-                            <h3 class="grid__item-heading">Australia (White)</h3>
-                        </div>
-                        <div class="grid__item grid__item--small text-center">
-                            <img src="http://placehold.it/364x364" class="max-full-width">
-                            <h3 class="grid__item-heading">Spain</h3>
-                        </div>
-                        <div class="grid__item grid__item--small text-center">
-                            <img src="http://placehold.it/364x364" class="max-full-width">
+                            <div class="grid__image-container grid__image-container--germany"></div>
                             <h3 class="grid__item-heading">Germany</h3>
                         </div>
                         <div class="grid__item grid__item--small text-center">
-                            <img src="http://placehold.it/364x364" class="max-full-width">
+                            <div class="grid__image-container grid__image-container--italy"></div>
                             <h3 class="grid__item-heading">Italy</h3>
                         </div>
                         <div class="grid__item grid__item--small text-center">
-                            <img src="http://placehold.it/364x364" class="max-full-width">
+                            <div class="grid__image-container grid__image-container--usa"></div>
                             <h3 class="grid__item-heading">United States</h3>
-                        </div>
-                        <div class="grid__item grid__item--small text-center">
-                            <img src="http://placehold.it/364x364" class="max-full-width">
-                            <h3 class="grid__item-heading">In Bond</h3>
-                        </div>
-                        <div class="grid__item grid__item--small text-center">
-                            <img src="http://placehold.it/364x364" class="max-full-width">
-                            <h3 class="grid__item-heading">Other</h3>
                         </div>
                     </div>
                 </div>
@@ -179,7 +154,7 @@
                     <span class="cta__caption text-center">Sign up for our website to receive special access to our features on wine and our event space in Hong Kong.</span>
                     <div class="cta__field">
                         <input type="email" name="email" placeholder="Your Email Address" class="cta__input" />
-                        <input type="submit" value="Sign Up" class="cta__button">
+                        <input type="submit" value="Sign Up" class="cta__button cta__button--integrated">
                     </div>
                     <hr class="cta__hr-2">
                 </form>

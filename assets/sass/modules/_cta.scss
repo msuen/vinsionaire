@@ -40,6 +40,15 @@ textarea {
 	}
 }
 
+%input--dark {
+	background-color: $color--white;
+	color: $color--black;
+	border: 1px solid rgba(0,0,0,0.4);
+	&:focus {
+		border: $border--accent-light;
+	}
+}
+
 %input--outline {
 	background-color: transparent;
 	color: $color--white;
@@ -137,9 +146,18 @@ textarea {
 
 .cta__form.cta__form {
 	@extend %container;
+	margin-top: 0;
+	margin-bottom: 0;
 	padding: 10em 2em;
 	position: relative;
 	z-index: 2;
+	&--contact {
+		padding: 2em 2em 0 2em;
+
+		@include bp(lg) {
+			padding: 2em 0 0 0;
+		}
+	}
 }
 
 .cta__input.cta__input {
@@ -148,6 +166,27 @@ textarea {
 	width: 100%;
 	@include bp(md) {
 		width: 700px;
+	}
+	&--contact {
+		@extend %input--dark;
+	}
+}
+
+.cta__textarea.cta__textarea {
+	@extend %input;
+	@extend %input--clear;
+	width: 100%;
+	padding-top: 13px;
+	resize: none;
+	@include bp(md) {
+		width: 700px;
+	}
+	@include single-transition(height, 0.2s, ease-in);
+	&--contact {
+		@extend %input--dark;
+		&:focus {
+			height: 200px;
+		}
 	}
 }
 
