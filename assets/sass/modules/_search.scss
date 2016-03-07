@@ -130,3 +130,67 @@
 	color: white;
 	cursor: pointer;
 }
+
+.hero--search {
+	.search {
+		margin-bottom: 4em;
+	}
+	select {
+		@extend %input;
+		@extend %input--clear;
+		padding: 0 1.5em;
+		width: auto;
+	    border: 1px solid $color--accent;
+	    -webkit-appearance:none;
+	    -moz-appearance:none;
+	    appearance:none;
+	    cursor:pointer;
+	    &:active, &:focus {
+	    	border: 1px solid $color--accent-light;
+	    	+ label:after {
+				color: $color--accent-light;
+			    border-bottom:1px solid $color--accent-light;
+	    	}
+	    }
+	}
+
+	/* Targetting Webkit browsers only. FF will show the dropdown arrow with so much padding. */
+	@media screen and (-webkit-min-device-pixel-ratio:0) {
+	    select {padding-right:45px}
+	}
+
+	label {
+		position:relative;
+		display: none;
+		@include bp(lg) {
+			display: inline-block;
+		    margin-right: 4em;
+		    &:last-of-type {
+		    	margin-right: 0;
+		    }
+		}
+	}
+	label:after {
+	    content:'<>';
+	    font: 16px "Consolas", monospace;
+	    color: $color--accent;
+	    -webkit-transform:rotate(90deg);
+	    -moz-transform:rotate(90deg);
+	    -ms-transform:rotate(90deg);
+	    transform:rotate(90deg);
+	    right:8px; top: 13px;
+	    padding:0 0 2px;
+	    border-bottom:1px solid $color--accent;
+	    position:absolute;
+	    pointer-events:none;
+	}
+	label:before {
+	    content:'';
+	    right:0; top:0px;
+	    width:28px; 
+	    height:48px;
+	    background: transparent;
+	    position:absolute;
+	    pointer-events:none;
+	}
+}

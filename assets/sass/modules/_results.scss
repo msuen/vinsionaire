@@ -26,6 +26,26 @@
 	}
 }
 
+.results .list__item--header {
+	min-height: 30px;
+	background-color: #fff;
+	&:hover {
+		color: $text__color--base;
+		background-color: #fff;
+	}
+	.list__image-header {
+		@include bp(sm) {
+			@include span(2 of 12);
+			max-width: 100px;
+			left: 1.69492%;
+		}
+	}
+	.list__name {
+		color: $color--black;
+		font-weight: bold;
+	}
+}
+
 .results .list__heading-wrapper {
 	margin-top: 2.5em;
 }
@@ -37,6 +57,14 @@
 		@include vertical-align(absolute);
 		left: 1.69492%;
 	}
+}
+
+.results .list__item-heading {
+	margin-bottom: 0.2em;
+}
+
+.results .icon-arrow-down {
+	transform: translateY(-1px);
 }
 
 .results .list__description {
@@ -55,8 +83,8 @@
 }
 
 .results .list__description--year {
-	margin-bottom: 1em;
 	@include bp(sm) {
+		margin-bottom: 1em;
 		@include span(2 of 12);
 		margin-bottom: 0;
 	}
