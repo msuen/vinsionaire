@@ -379,7 +379,7 @@ textarea {
     border: 1px solid #F8D3B7; }
 
 .cta, .cta--order {
-  background: url('../img/home-hero.jpg?1457338841');
+  background: url('../img/home-hero.jpg?1457347314');
   background-size: cover;
   background-position: center center;
   position: relative; }
@@ -536,7 +536,7 @@ textarea {
       height: 80vh; } }
 
 .hero--home {
-  background: url('../img/home-hero.jpg?1457338841');
+  background: url('../img/home-hero.jpg?1457347314');
   position: relative;
   background-position: center center;
   background-repeat: no-repeat;
@@ -558,7 +558,7 @@ textarea {
   background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
   background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)); }
 .hero--search-empty {
-  background: url('../img/home-hero.jpg?1457338841');
+  background: url('../img/home-hero.jpg?1457347314');
   position: relative;
   background-position: center center;
   background-repeat: no-repeat;
@@ -566,7 +566,7 @@ textarea {
   .hero--search-empty .hero__overlay {
     background-color: rgba(0, 0, 0, 0.35); }
 .hero--search {
-  background: url('../img/home-hero.jpg?1457338841');
+  background: url('../img/home-hero.jpg?1457347314');
   height: 100vh;
   height: 500px;
   min-height: 300px; }
@@ -942,7 +942,7 @@ textarea {
         display: block;
         float: left;
         margin: 0 2rem 0 2rem;
-        background: url("/assets/img/vinsionaire-logo-sm.svg");
+        background: url("../img/vinsionaire-logo-sm.svg");
         background-size: cover;
         width: 99px;
         height: 38px; } }
